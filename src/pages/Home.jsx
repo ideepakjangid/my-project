@@ -21,20 +21,11 @@ const Home = () => {
 
           {/* Call-to-Action Section */}
           <div className="flex justify-center space-x-4">
-            {/* Add Quiz Button */}
             <Link
-              to="/add-quiz"
+              to="/play-quiz"
               className="px-8 py-3 text-white bg-blue-500 font-semibold text-lg rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 transition-transform duration-200"
             >
-              Add Quiz
-            </Link>
-
-            {/* View Quizzes Button */}
-            <Link
-              to="/view-quiz"
-              className="px-8 py-3 text-white bg-green-500 font-semibold text-lg rounded-lg shadow-md hover:bg-green-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-300 transform hover:scale-105 transition-transform duration-200"
-            >
-              View Quizzes
+              Play Quiz
             </Link>
           </div>
         </div>
