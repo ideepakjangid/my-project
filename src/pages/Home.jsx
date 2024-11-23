@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="flex items-center justify-center min-h-[95vh] bg-gradient-to-r from-blue-100 to-green-100">
+      <div className="flex items-center justify-center min-h-[95vh] p-4 bg-gradient-to-r from-blue-100 to-green-100">
         <div className="max-w-3xl text-center space-y-8 p-6 bg-white rounded-xl shadow-lg">
           {/* App Title */}
           <h1 className="text-5xl font-extrabold text-gray-800">

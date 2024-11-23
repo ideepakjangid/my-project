@@ -11,12 +11,12 @@ const ViewQuiz = () => {
     const starCountRef = ref(db, "quizzes/");
     onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
-      console.log(data)
+      console.log(data);
 
       const newArr = Object.keys(data).map((quizId) => {
         return { id: quizId, ...data[quizId] };
       });
-      console.log(Object.keys(data))
+      console.log(Object.keys(data));
       setQuizzes(newArr);
     });
   };
@@ -41,10 +41,7 @@ const ViewQuiz = () => {
                 <tr className="bg-gray-200 text-gray-700">
                   <th className="px-4 py-2 border border-gray-300">S.No</th>
                   <th className="px-4 py-2 border border-gray-300">Question</th>
-                  <th className="px-4 py-2 border border-gray-300">Option 1</th>
-                  <th className="px-4 py-2 border border-gray-300">Option 2</th>
-                  <th className="px-4 py-2 border border-gray-300">Option 3</th>
-                  <th className="px-4 py-2 border border-gray-300">Option 4</th>
+                  <th className="px-4 py-2 border border-gray-300">Answer</th>
                 </tr>
               </thead>
               <tbody>
@@ -56,37 +53,8 @@ const ViewQuiz = () => {
                     <td className="px-4 py-2 border border-gray-300">
                       {quiz.question}
                     </td>
-                    <td
-                      className={`px-4 py-2 border border-gray-300 ${
-                        quiz[quiz.correctOption] == quiz.option1 &&
-                        "text-[green] font-bold"
-                      }`}
-                    >
-                      {quiz.option1}
-                    </td>
-                    <td
-                      className={`px-4 py-2 border border-gray-300 ${
-                        quiz[quiz.correctOption] == quiz.option2 &&
-                        "text-[green] font-bold"
-                      }`}
-                    >
-                      {quiz.option2}
-                    </td>
-                    <td
-                      className={`px-4 py-2 border border-gray-300 ${
-                        quiz[quiz.correctOption] == quiz.option3 &&
-                        "text-[green] font-bold"
-                      }`}
-                    >
-                      {quiz.option3}
-                    </td>
-                    <td
-                      className={`px-4 py-2 border border-gray-300 ${
-                        quiz[quiz.correctOption] == quiz.option4 &&
-                        "text-[green] font-bold"
-                      }`}
-                    >
-                      {quiz.option4}
+                    <td className="px-4 py-2 border border-gray-300 text-[green] font-bold">
+                      {quiz[quiz.correctOption]}
                     </td>
                   </tr>
                 ))}
