@@ -27,7 +27,7 @@ const AddQuiz = () => {
 
   useEffect(() => {
     const lsUserData = localStorage.getItem("user");
-    if (lsUserData == undefined) {
+    if (lsUserData == null) {
       navigator("/login");
     }
   }, []);

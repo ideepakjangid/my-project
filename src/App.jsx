@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import Play from "./pages/Play";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -46,6 +47,10 @@ const App = () => {
         {
           path: "/view-quiz",
           element: <ViewQuiz />,
+        },
+        {
+          path: "/play-quiz",
+          element: <Play />,
         },
       ],
     },

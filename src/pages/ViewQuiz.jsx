@@ -24,7 +24,7 @@ const ViewQuiz = () => {
   useEffect(() => {
     fetchQuizzesData();
     const lsUserData = localStorage.getItem("user");
-    if (lsUserData == undefined) {
+    if (lsUserData == null) {
       navigator("/");
     }
   }, []);

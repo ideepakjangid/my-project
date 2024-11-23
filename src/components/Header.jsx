@@ -37,6 +37,9 @@ const Header = () => {
               <Link to="/view-quiz">View Quiz</Link>
             </li>
             <li>
+              <Link to="/play-quiz">Play</Link>
+            </li>
+            <li>
               <Link to="/" onClick={handleLogout}>
                 Log Out
               </Link>
@@ -83,6 +86,11 @@ const Header = () => {
             <li className="p-2 ps-4 hover:text-gray-700 border border-gray-400">
               <Link to="/view-quiz" onClick={() => setClicked(true)}>
                 View Quiz
+              </Link>
+            </li>
+            <li className="p-2 ps-4 hover:text-gray-700 border border-gray-400">
+              <Link to="/play-quiz" onClick={() => setClicked(true)}>
+                Play
               </Link>
             </li>
             <li className="p-2 ps-4 hover:text-gray-700 border border-gray-400">
