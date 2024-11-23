@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { Context } from "../context/MainContext";
 
 const Register = () => {
-  const {login } = useContext(Context);
+  const { login } = useContext(Context);
   const navigator = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -63,8 +63,8 @@ const Register = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          login(user.toJSON())
-          console.log(user)
+          login(user.toJSON());
+          console.log(user);
           navigator("/");
 
           // ...
@@ -78,7 +78,7 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center bg-gradient-to-r from-blue-100 to-green-100 min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center p-4 bg-gradient-to-r from-blue-100 to-green-100 min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-800">
           Register
