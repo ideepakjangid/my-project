@@ -33,7 +33,7 @@ const AddQuiz = () => {
   }, []);
   return (
     <>
-      <div className="flex items-center justify-center py-4 min-h-screen bg-gradient-to-r from-blue-100 to-green-100">
+      <div className="flex items-center justify-center p-4 min-h-screen bg-gradient-to-r from-blue-100 to-green-100">
         <div className="w-full max-w-lg p-8 space-y-6 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-center text-gray-800">
             Add Quiz
